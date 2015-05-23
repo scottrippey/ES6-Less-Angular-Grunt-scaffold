@@ -6,11 +6,9 @@ module.exports = function(grunt) {
 				files: [
 					{
 						src: [ 
-							'src/less/**/*.css',
-							'src/less/**/*.less',
-							'src/angular-modules/**/*.less'
+							'src/less/master.less'
 						],
-						dest: 'dist/css/styles.combined.css' 
+						dest: 'dist/css/master.combined.css' 
 					}
 				]
 			}
