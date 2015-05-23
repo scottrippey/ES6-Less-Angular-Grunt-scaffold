@@ -14,11 +14,11 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			'BUILD-JS': {
-				src: [ 'src/angular-modules/**/*.es6.js' ],
+				files: [ 'src/angular-modules/**/*.es6.js' ],
 				tasks: [ 'build-js' ]
 			},
 			'ALL-ES6-livereload': {
-				src: [ 'dist/js/**/*.js' ],
+				files: [ 'dist/js/**/*.js' ],
 				options: { livereload: true }
 			}
 		}

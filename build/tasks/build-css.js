@@ -5,9 +5,7 @@ module.exports = function(grunt) {
 			'ALL-LESS': {
 				files: [
 					{
-						src: [ 
-							'src/less/master.less'
-						],
+						src: 'src/less/master.less',
 						dest: 'dist/css/master.combined.css' 
 					}
 				]
@@ -15,11 +13,11 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			'ALL-LESS': {
-				src: [ 'src/**/*.css', 'src/**/*.less' ],
+				files: [ 'src/**/*.css', 'src/**/*.less' ],
 				tasks: [ 'build-css' ]
 			},
 			'ALL-LESS-livereload': {
-				src: [ 'dist/css/**/*.css' ],
+				files: [ 'dist/css/**/*.css' ],
 				options: { livereload: true }
 			}
 		}
