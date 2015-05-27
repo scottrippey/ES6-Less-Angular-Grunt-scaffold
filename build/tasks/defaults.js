@@ -24,7 +24,8 @@ module.exports = function(grunt) {
 			options: {
 				sourceMap: true,
 				plugins: [
-					new (require('less-plugin-autoprefix'))({ })
+					new (require('less-plugin-autoprefix'))({ }),
+					require('less-plugin-glob')
 				]
 			}
 		}
