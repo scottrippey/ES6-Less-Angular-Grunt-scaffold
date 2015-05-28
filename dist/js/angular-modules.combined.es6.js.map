@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../src/angular-modules/MainApp.js"],"names":[],"mappings":"AAAA,OAAO,CAAC,MAAM,EAAE,OAAO,EAAE,CAAC,CAAC,CAAC;AAC5B,CAAC,CAAC,SAAS,EAAE,CAAC;AACd,CAAC,CAAC,OAAO,CAAC,CAAC;AACX","file":"angular-modules.combined.es6.js","sourcesContent":["angular.module('MainApp', [\r\n\t'ngAnimate',\r\n\t'ngTouch'\r\n]);"]}

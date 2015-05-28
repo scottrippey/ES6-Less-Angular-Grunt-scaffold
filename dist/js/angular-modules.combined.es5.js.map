@@ -1,1 +1,0 @@
-{"version":3,"sources":["dist/js/angular-modules.combined.es6.js"],"names":[],"mappings":";;AAAA,OAAO,CAAC,MAAM,CAAC,SAAS,EAAE,CACzB,WAAW,EACX,SAAS,CACT,CAAC,CAAC","file":"dist/js/angular-modules.combined.es6.js","sourcesContent":["angular.module('MainApp', [\r\n\t'ngAnimate',\r\n\t'ngTouch'\r\n]);\n//# sourceMappingURL=angular-modules.combined.es6.js.map"]}
