@@ -51,7 +51,7 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			'APP-ES6': {
-				files: [ 'src/app/app/**/*.js' ],
+				files: [ 'src/app/**/*.js' ],
 				tasks: [ 'build-js-combine-compile' ]
 			},
 			'APP-ES6-livereload': {
