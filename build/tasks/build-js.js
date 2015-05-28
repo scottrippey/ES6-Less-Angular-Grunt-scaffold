@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 		babel: {
 			'ANGULAR-MODULES-ES6': {
 				src: 'dist/js/angular-modules.combined.es6.js',
-				dest: 'dist/js/angular-modules.combined.js'
+				dest: 'dist/js/angular-modules.combined.es5.js'
 			}
 		},
 		watch: {
