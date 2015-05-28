@@ -4,14 +4,17 @@ angular.module('app', ['ngAnimate', 'ngTouch', 'components.js']);
 angular.module('hello-world.js', []).directive('helloWorld', [function _directive_() {
 	return {
 		restrict: 'E',
-		controllerAs: 'ctrl',
 		bindToController: true,
-		scope: {},
-		template: '\n\n\t\t\t\t<div ng-bind="ctrl.message"></div>\n\n\t\t\t',
+		controllerAs: 'ctrl',
+		scope: {
+			punctuation: '@helloPunctuation'
+		},
+		template: '\n\n\t\t\t\t<div ng-bind="ctrl.message + ctrl.punctuation"></div>\n\n\t\t\t',
 		controller: [function _controller_() {
 			var ctrl = this;
+
 			angular.extend(ctrl, {
-				message: 'Hello world!'
+				message: 'Hello world'
 			});
 		}]
 	};
