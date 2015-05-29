@@ -10,9 +10,9 @@ angular.module('hello-world.js', [])
 			},
 			template: `
 
-				<div>
+				<span class="hello-world">
 					{{ vm.message + vm.helloPunctuation }}
-				</div>
+				</span>
 
 			`.trim(),
 			controller: function _HelloWorldController() {

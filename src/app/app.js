@@ -2,5 +2,6 @@ angular.module('app', [
 	'ngAnimate',
 	'ngTouch',
 
-	'components.js'
+	'components.js',
+	'pages.js'
 ]);
