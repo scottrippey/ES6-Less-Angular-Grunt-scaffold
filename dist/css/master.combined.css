@@ -601,4 +601,9 @@ fieldset {
 textarea {
   resize: vertical;
 }
+.hello-world {
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 0.2rem;
+}
 /*# sourceMappingURL=dist/css/master.combined.css.map */
