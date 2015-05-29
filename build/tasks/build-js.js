@@ -13,13 +13,11 @@ module.exports = function(grunt) {
 			 */
 			'GENERATE-MODULE-LISTS': {
 				files: {
-					'src/app/components/components.js': [
-						'src/app/components/**/*.js',
-						'!**/components.js'
+					'src/app/app-components.js': [
+						'src/app/components/**/*.js'
 					],
-					'src/app/pages/pages.js': [
-						'src/app/pages/**/*.js',
-						'!**/pages.js'
+					'src/app/app-pages.js': [
+						'src/app/pages/**/*.js'
 					]
 				},
 				options: {
