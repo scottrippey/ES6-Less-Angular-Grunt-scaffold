@@ -4,25 +4,24 @@ angular.module('hello-world.js', [])
 		return {
 			restrict: 'E',
 			bindToController: true,
-			controllerAs: 'ctrl',
+			controllerAs: 'vm',
 			scope: {
-				punctuation: '@helloPunctuation'
+				helloPunctuation: '@'
 			},
 			template: `
 
-				<div ng-bind="ctrl.message + ctrl.punctuation"></div>
+				<div>
+					{{ vm.message + vm.helloPunctuation }}
+				</div>
 
-			`,
-			controller: [
-				function _controller_() {
-					var ctrl = this;
+			`.trim(),
+			controller: function _HelloWorldController() {
+				var vm = this;
 
-					angular.extend(ctrl, {
-						message: "Hello world"
-					});
-
-				}
-			]
+				angular.extend(vm, {
+					message: "Hello world"
+				});
+			}
 		}
 	}
 ]);

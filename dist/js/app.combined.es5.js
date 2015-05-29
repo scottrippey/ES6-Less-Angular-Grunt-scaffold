@@ -5,18 +5,18 @@ angular.module('hello-world.js', []).directive('helloWorld', [function _directiv
 	return {
 		restrict: 'E',
 		bindToController: true,
-		controllerAs: 'ctrl',
+		controllerAs: 'vm',
 		scope: {
-			punctuation: '@helloPunctuation'
+			helloPunctuation: '@'
 		},
-		template: '\n\n\t\t\t\t<div ng-bind="ctrl.message + ctrl.punctuation"></div>\n\n\t\t\t',
-		controller: [function _controller_() {
-			var ctrl = this;
+		template: '\n\n\t\t\t\t<div>\n\t\t\t\t\t{{ vm.message + vm.helloPunctuation }}\n\t\t\t\t</div>\n\n\t\t\t'.trim(),
+		controller: function _HelloWorldController() {
+			var vm = this;
 
-			angular.extend(ctrl, {
+			angular.extend(vm, {
 				message: 'Hello world'
 			});
-		}]
+		}
 	};
 }]);
 
