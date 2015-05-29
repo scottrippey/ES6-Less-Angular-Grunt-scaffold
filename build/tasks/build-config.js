@@ -1,4 +1,7 @@
 module.exports = function(grunt) {
+	/**
+	 * Setup the default configuration options for all tasks:
+	 */
 	
 	// Misc:
 	grunt.config.merge({
@@ -11,8 +14,8 @@ module.exports = function(grunt) {
 			options: {
 
 			},
-			buildFiles: {
-				files: [ 'Gruntfile.js', 'tasks/**/*.js' ],
+			'GRUNTFILE': {
+				files: [ 'build/Gruntfile.js', 'build/tasks/**/*.js' ],
 				options: { reload: true }
 			}
 		}
